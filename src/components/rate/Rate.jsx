@@ -2,11 +2,9 @@ import React, { useState } from "react";
 import starImg from "/icon-star.svg";
 import "./rate.css";
 
-export default function Rate() {
+export default function Rate({ setSubmit, setRate, rate }) {
   const buttons = [1, 2, 3, 4, 5];
-  const [rate, setRate] = useState();
 
-  console.log(rate);
   return (
     <div className="box-rate">
       <div className="img-circle">
@@ -32,7 +30,9 @@ export default function Rate() {
           </button>
         ))}
       </div>
-      <button className="submit">SUBMIT</button>
+      <button className="submit" onClick={() => setSubmit(true)}>
+        SUBMIT
+      </button>
     </div>
   );
 }

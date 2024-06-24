@@ -45,6 +45,7 @@ h1 {
   font-weight: 700;
   line-height: 2.4rem;
   letter-spacing: 0.175rem;
+  cursor: pointer;
 }
 .buttons-div button:hover {
   background-color: #fc7614;
@@ -57,6 +58,7 @@ h1 {
   border-radius: 2.25rem;
   background-color: #fc7614;
   border: none;
+  cursor: pointer;
 }
 .submit:hover {
   background-color: #ffffff;
