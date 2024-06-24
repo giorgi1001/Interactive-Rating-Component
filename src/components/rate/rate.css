@@ -1,0 +1,48 @@
+.box-rate {
+  width: 32.7rem;
+  border-radius: 1.5rem;
+  padding: 2.4rem 2.4rem 3.2rem;
+  background: var(
+    --black-gradient,
+    radial-gradient(98.96% 98.96% at 50% 0%, #232a34 0%, #181e27 100%)
+  );
+}
+.img-circle {
+  width: 4rem;
+  height: 4rem;
+  background-color: #262e38;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  color: var(--Pure-White, #fff);
+  margin: 1.6rem 0 1rem;
+}
+.description {
+  color: var(--Light-Grey, #969fad);
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+  margin-bottom: 2.4rem;
+}
+.buttons-div {
+  display: flex;
+  gap: 1.8rem;
+  margin-bottom: 2.4rem;
+}
+.buttons-div button {
+  all: unset;
+  background-color: #262e38;
+  color: red;
+  width: 4.2rem;
+  height: 4.2rem;
+  border-radius: 50%;
+  text-align: center;
+  color: var(--Medium-Gray, #7c8798);
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  letter-spacing: 0.175rem;
+}
