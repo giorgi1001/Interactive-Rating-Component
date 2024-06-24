@@ -46,3 +46,19 @@ h1 {
   line-height: 2.4rem;
   letter-spacing: 0.175rem;
 }
+.buttons-div button:hover {
+  background-color: #fc7614;
+  color: white;
+}
+.submit {
+  display: block;
+  width: 100%;
+  padding: 1.2rem 0 1.2rem;
+  border-radius: 2.25rem;
+  background-color: #fc7614;
+  border: none;
+}
+.submit:hover {
+  background-color: #ffffff;
+  color: #fc7614;
+}

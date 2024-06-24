@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import starImg from "/icon-star.svg";
 import "./rate.css";
 
 export default function Rate() {
   const buttons = [1, 2, 3, 4, 5];
+  const [rate, setRate] = useState();
+
+  console.log(rate);
   return (
     <div className="box-rate">
       <div className="img-circle">
@@ -17,21 +20,19 @@ export default function Rate() {
 
       <div className="buttons-div">
         {buttons.map((element) => (
-          <button key={element}>{element}</button>
+          <button
+            key={element}
+            onClick={() => setRate(element)}
+            style={{
+              backgroundColor: rate === element ? "#7C8798" : "",
+              color: rate === element ? "#FFFFFF" : "",
+            }}
+          >
+            {element}
+          </button>
         ))}
       </div>
-      <button
-        style={{
-          display: "block",
-          width: "100%",
-          padding: "1.2rem 0 1.2rem",
-          borderRadius: "2.25rem",
-          backgroundColor: "#FC7614",
-          border: "none",
-        }}
-      >
-        SUBMIT
-      </button>
+      <button className="submit">SUBMIT</button>
     </div>
   );
 }
