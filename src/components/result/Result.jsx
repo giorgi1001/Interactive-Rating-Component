@@ -7,7 +7,7 @@ export default function Result({ rate }) {
     <div className="box-result">
       <img src={thanksImg} alt="thanks img " />
       <div className="your-rate">
-        <span>you selected {rate} out of 5</span>
+        <span>You selected {rate} out of 5</span>
       </div>
       <h2>Thank you!</h2>
       <p className="result-description">

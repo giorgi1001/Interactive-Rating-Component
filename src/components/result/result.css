@@ -11,6 +11,10 @@
   flex-direction: column;
   align-items: center;
 }
+.box-result img {
+  width: 14.4rem;
+  height: 9.2rem;
+}
 .your-rate {
   margin: 2.4rem 0 2.4rem;
   width: 16.8rem;
@@ -33,4 +37,27 @@ h2 {
   font-size: 1.4rem;
   font-style: normal;
   line-height: 2.2rem;
+}
+
+@media only screen and (min-width: 90rem) {
+  .box-result {
+    width: 41.2rem;
+    padding: 4.5rem 4rem 4.5rem 3.2rem;
+  }
+  .box-result img {
+    width: 16.2rem;
+    height: 10.8rem;
+  }
+  .your-rate {
+    margin: 3.2rem 0 3.2rem;
+    width: 19.3rem;
+    padding: 0.5rem 0 0.5rem;
+  }
+  h2 {
+    font-size: 2.8rem;
+  }
+  .result-description {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+  }
 }
